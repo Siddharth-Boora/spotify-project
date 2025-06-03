@@ -1,0 +1,255 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+.topbar{
+  display: flex;
+  background-color: black;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+svg, img{
+  height: 35px;
+  fill: white;
+}
+
+.install-app-button {
+  display:flex;
+  color:white;
+}
+button{
+  height: 45px;
+}
+.spotify-button{
+  margin-left: 20px;
+  background-color: black;
+  border: none;
+}
+.spotify-button:hover{
+  cursor: pointer;
+}
+.home-button-img {
+  height: 27px;
+  transition: fill 0.1s ease;
+}
+.home-button {
+  margin-left: 625px;
+  background-color: rgb(30,30,30);
+  border: none;
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+  transition: background-color 0.5s ease, transform 0.1s ease;
+}
+.home-button:hover {
+  background-color: rgb(50,50,50);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.home-button:active {
+  background-color: rgb(30,30,30);
+  transform: none;
+}
+.home-button-img:active {
+  fill: rgb(180,180,180);
+}
+.search-bar-total {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin-left: 10px;
+  background-color: rgb(30,30,30);
+  border: solid 0.2px transparent;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.search-bar:focus {
+  outline: none;
+  box-shadow: none;
+}
+.search-bar-total:hover {
+  background-color: rgb(40,40,40);
+  border: solid 0.2px;
+  border-color: rgb(70,70,70)
+}
+.search-button-img {
+  fill: rgb(180,180,180);
+  height: 25px;
+  transition: 0.3s fill ease;
+}
+.search-bar-total:hover .search-button-img {
+  fill: white !important;
+}
+.search-button {
+  background-color: transparent;
+  border: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 45px;
+  width: 45px;
+}
+.search-button:hover {
+  cursor: pointer;
+}
+.search-bar {
+  border: none;
+  height: 45px;
+  width: 375px;
+  margin-left: 0;
+  color: rgb(180,180,180);
+  background-color: transparent;
+  font-size: 16px;
+  font-family: manrope;
+  font-weight: 600;
+}
+.search-bar::placeholder {
+  color: rgb(180,180,180);
+}
+.search-bar-divider-wrapper{
+  height: 45px;
+  background-color: transparent;
+  display: flex;
+  align-items:center;
+}
+.search-bar-divider {
+  height: 24px;
+  width: 1px;
+  background-color: rgb(180,180,180);
+  border-radius: 2px;
+}
+.browse-button-img {
+  fill: rgb(180,180,180);
+  height: 25px;
+  transition: fill 0.3s ease;
+}
+.browse-button {
+  background-color: transparent;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 45px;
+  width: 60px;
+  cursor: pointer;
+  transition:transform 0.15s ease;
+}
+.browse-button:hover .browse-button-img {
+  cursor: pointer;
+  fill: white;
+  transform: scale(1.04);
+}
+.prem-button {
+  height: 31px;
+  font-family: manrope;
+  font-weight: 800;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 30px;
+  border: none;
+  margin-left: 260px;
+  background-color: white;
+  align-items: center;
+  transition: transform 0.1s ease;
+}
+.prem-button:hover {
+  cursor: pointer;
+  background-color: rgb(245,245,245);
+  transform: scale(1.04);
+}
+.prem-button:active {
+  background-color: rgb(230,230,230);
+  transform: none;
+}
+.install-app-img {
+  fill: rgb(180,180,180);
+  height: 17px;
+}
+.install-app-text {
+  font-family: manrope;
+  font-weight: 800;
+  color: rgb(180,180,180);
+  font-size: 12px;
+  margin-left: 6px;
+}
+.install-app-button {
+  background-color: black;
+  border: none;
+  margin-left: 7px;
+  transition: transform 0.1s ease;
+}
+.install-app-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill:white;
+}
+.install-app-button:active {
+  transform: none;
+}
+.bell-button-img {
+  fill: rgb(180,180,180);
+  height: 16px;
+  transition: fill 0.1s ease;
+}
+.bell-button {
+  background-color: black;
+  border: none;
+  margin-left: 34px;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+.bell-button-img:hover {
+  fill: white;
+}
+.bell-button:hover {
+  transform: scale(1.07);
+  cursor:pointer
+}
+.bell-button-img:active {
+  fill: rgb(150,150,150);
+}
+.bell-buttom:active {
+  transform: none;
+}
+.friends-button-img {
+  fill: rgb(180,180,180);
+  height: 16px;
+  transition: fill 0.1s ease;
+}
+.friends-button {
+  background-color: black;
+  border: none;
+  margin-left: 14px;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+.friends-button-img:hover {
+  fill: white;
+}
+.friends-button:hover {
+  transform: scale(1.07);
+  cursor:pointer
+}
+.friends-button-img:active {
+  fill: rgb(150,150,150);
+}
+.friends-buttom:active {
+  transform: none;
+}
+.profile-pfp {
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-left: 28px;
+  transition: transform 0.1s ease;
+}
+.profile-pfp:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.profile-pfp:active {
+  opacity: 0.8;
+  transform: none;
+}
