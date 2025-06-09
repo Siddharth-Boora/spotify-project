@@ -1,0 +1,68 @@
+.lib-playlist-img-circle {
+  border-radius: 100px;
+  height: 48px;
+  width: 48px;
+  transition: opacity 0.1s ease;
+}
+.lib-playlist-img-square {
+  height: 48px;
+  width: 48px;
+  border-radius: 4px;
+  transition: opacity 0.1s ease;
+}
+.lib-playlist-button {
+  height: 64px;
+  width: 404px;
+  display: flex;
+  background-color: rgb(20,20,20);
+  border: none;
+  margin-left: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.lib-playlist-name {
+  color: white;
+  font-family: manrope;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 14px
+}
+.lib-text {
+  text-align: left;
+}
+.lib-playlist-type {
+  color: rgb(180,180,180);
+  font-family: manrope;
+  font-weight: 600;
+  font-size: 13px;
+  margin-left: 14px;
+}
+.lib-playlist-button:hover {
+  background-color: rgb(30,30,30);
+}
+.lib-playlist-button:active {
+  background-color: black;
+}
+.hover-play-lib {
+  height: 24px;
+  margin-left: 12px;
+    opacity: 0;
+  visibility: hidden;
+  position: absolute; 
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+.lib-playlist-button:hover .hover-play-lib {
+  opacity: 1;
+  visibility: visible;
+}
+.lib-playlist-button:hover .lib-playlist-img-circle {
+  opacity: 0.5;
+}
+.lib-playlist-button:hover .lib-playlist-img-square {
+  opacity: 0.5;
+}
+.hover-play-lib:active {
+  transform: scale(0.98);
+  fill: rgb(230,230,230);
+}
